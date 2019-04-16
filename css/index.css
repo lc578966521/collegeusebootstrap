@@ -1,0 +1,75 @@
+/****************************通用样式****************************/
+ body{
+     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+     color: #000;
+ }
+ @font-face{
+     font-family: lk;
+     src:
+        url(../fonts/lk.eot) format('embedded-opentype'),
+        url(../fonts/lk.svg) format('svg'),
+        url(../fonts/lk.ttf) format('truetype'),
+        url(../fonts/lk.woff) format('woff')
+ }
+ /* 全局配置 */
+ [class*=" icon-"]{
+     font-family: lk;
+     font-style: normal;
+ }
+/****************************通用样式****************************/
+/****************************头部样式****************************/
+#header{
+
+}
+#header .top-bar{
+    height: 40px;
+    line-height: 39px;
+    border-bottom: 1px solid #e0e0e0;
+}
+#header .top-bar .container .row >div+div{
+    border-left: 1px solid #e0e0e0;
+}
+#header .top-bar .container .row .top-bar-1 a{
+    position: relative;
+}
+#header .top-bar .container .row .top-bar-1 a img{
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    margin-top: -10px;
+    display: none;
+    z-index: 9999;
+}
+#header .top-bar .container .row .top-bar-1 a:hover img{
+    display: block;
+}
+.icon-phone::before{
+    content: "\e958";
+    font-size: 13px;
+}
+.icon-tel::before{
+    content: "\e942";
+    font-size: 13px;
+}
+#header .bottom-bar > nav{
+    background-color: #fff;
+    margin-bottom: 0;
+}
+#header .bottom-bar > nav .navbar-brand{
+    height: 70px;
+    padding: 10px 15px
+}
+#header .bottom-bar > nav .navbar-nav a{
+    height: 70px;
+    line-height: 40px;
+}
+#header .bottom-bar > nav .navbar-nav li.active a,
+#header .bottom-bar > nav .navbar-nav li:hover a{
+    background-color: transparent;
+    border-bottom: 2px solid #0ab4f7;
+}
+#header .bottom-bar .navbar-toggle{
+    margin-top: 18px;
+}
+/****************************头部样式****************************/
+
